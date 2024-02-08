@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Detective | Aryan Srivastava</title>
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header of the website -->
+      <header class="header">
+        <h1 class="title">DevDetective</h1>
+        <div id="btn-mode">
+          <p id="mode-text">DARK</p>
+          <div class="icon-container">
+            <img id="mode-icon" src="assets/images/moon-icon.svg" alt="" />
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Section of the Website -->
+      <main>
+        <div id="app">
+          <!-- Search Bar Container-->
+          <div class="searchbar-container active">
+            <!-- Search input field -->
+            <input
+              type="search"
+              name="user-input"
+              id="input"
+              placeholder="Enter a Github username..."
+              required
+            />
+
+            <!-- Error message initially hidden -->
+            <div class="error">
+              <p id="no-results">Github user not found</p>
+            </div>
+
+            <!-- Search Button -->
+            <button class="btn-search" id="submit">Search</button>
+          </div>
+
+          <!-- Profile Container -->
+          <div class="profile-container">
+            <div class="profile-content">
+              <!-- Profile Header -->
+              <div class="profile-header">
+                <!-- Image of github user -->
+                <img id="avatar" src="#" alt="" />
+
+                <!-- Information about the user -->
+                <div class="profile-info-wrapper">
+                  <!-- Profile Name and Link to Github ptofile -->
+                  <div class="profile-name">
+                    <!-- Name -->
+                    <h2 id="name"></h2>
+
+                    <!-- Link to Github Profile -->
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      id="user"
+                    ></a>
+                  </div>
+
+                  <!-- Date on which user joined Github -->
+                  <p id="date"></p>
+                </div>
+              </div>
+
+              <!-- Profile bio -->
+              <p id="bio"></p>
+
+              <!-- Profile Stats -->
+              <div class="profile-stats-wrapper">
+                <!-- Repos -->
+                <div class="prifle-stat">
+                  <p class="stat-title">Repos</p>
+                  <p id="repos" class="stat-value"></p>
+                </div>
+
+                <!-- Followers -->
+                <div class="prifle-stat">
+                  <p class="stat-title">Followers</p>
+                  <p id="followers" class="stat-value"></p>
+                </div>
+
+                <!-- Following -->
+                <div class="prifle-stat">
+                  <p class="stat-title">Following</p>
+                  <p id="following" class="stat-value"></p>
+                </div>
+              </div>
+
+              <!-- Profile Details and links -->
+              <div class="profile-bottom-wrapper">
+                <!-- Loaction -->
+                <div class="profile-info">
+                  <div class="bottom-icons">
+                    <img src="assets/images/location-icon.svg" />
+                  </div>
+                  <p id="location"></p>
+                </div>
+
+                <!-- Bio Link -->
+                <div class="profile-info">
+                  <div class="bottom-icons">
+                    <img src="assets/images/website-icon.svg" />
+                  </div>
+                  <a href="#" target="_blank" id="page"></a>
+                </div>
+
+                <!-- Twitter Profile Link -->
+                <div class="profile-info">
+                  <div class="bottom-icons">
+                    <img src="assets/images/twitter-icon.svg" />
+                  </div>
+                  <a href="#" target="_blank" id="twitter"></a>
+                </div>
+
+                <!-- Current Company of Github Profile User -->
+                <div class="profile-info">
+                  <div class="bottom-icons">
+                    <img src="assets/images/company-icon.svg" />
+                  </div>
+                  <p id="company"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
